@@ -1,37 +1,30 @@
-import React from 'react'
+import React from 'react';
+import {View, Text} from 'react-native';
 
-import {View} from 'react-native'
-import { TextLink } from 'solito/link'
-import { MotiLink } from 'solito/moti'
+import Button from 'app/components/Button';
+import LinkButton from 'app/components/LinkButton';
+import {TextLink} from 'solito/link';
+import {MotiLink} from 'solito/moti';
+
+import {Container} from './styles';
 
 export function HomeScreen() {
-
   return (
-    <View>
-        <TextLink
-          href="/user/fernando"
-          textProps={{
-            style: { fontSize: 16, fontWeight: 'bold', color: 'blue' },
-          }}
-        >
-          Regular Link
-        </TextLink>
-        <MotiLink
-          href="/user/fernando"
-          animate={({ hovered, pressed }) => {
-            'worklet'
-
-            return {
-              scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-              rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-            }
-          }}
-          transition={{
-            type: 'timing',
-            duration: 150,
-          }}
-        >
-            Moti Link
-        </MotiLink></View>
-  )
+    <Container>
+      <TextLink
+        href="/user/fernando"
+        textProps={{
+          style: {
+            fontSize: 16,
+            fontWeight: 'bold',
+            color: 'blue',
+          },
+        }}>
+        <Button>
+          <Text>Regular Link</Text>
+        </Button>
+      </TextLink>
+      <LinkButton href="/user/fernando" label="Moti Link" />
+    </Container>
+  );
 }

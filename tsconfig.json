@@ -6,5 +6,7 @@
       "app/*": ["./packages/app/*"]
     }
   },
-  "extends": "expo/tsconfig.base"
+  "include": ["packages"],
+  "extends": "expo/tsconfig.base",
+  "exclude": ["node_modules"]
 }

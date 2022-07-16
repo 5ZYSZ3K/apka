@@ -6,13 +6,18 @@
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
-    "dripsy": "^3.6.0",
     "eslint": "^8.19.0",
     "expo-linking": "^3.0.0",
     "moti": "canary",
     "prettier": "^2.7.1",
+    "react-native-paper": "^4.12.2",
+    "react-native-vector-icons": "^9.2.0",
     "solito": "latest",
-    "typescript": "^4.7.4"
+    "styled-components": "^5.3.5"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25",
+    "typescript": "^4.7.4"
+  }
 }

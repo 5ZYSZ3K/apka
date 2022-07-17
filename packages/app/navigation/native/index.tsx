@@ -1,13 +1,12 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
-import {HomeScreen} from '../../features/home/screen';
-import {UserDetailScreen} from '../../features/user/detail-screen';
+import ContactScreen from 'app/features/contact';
+import HomeScreen from 'app/features/home';
+import InstructionsScreen from 'app/features/instructions';
 
 const Stack = createNativeStackNavigator<{
   home: undefined;
-  'user-detail': {
-    id: string;
-  };
+  contact: undefined;
+  instructions: undefined;
 }>();
 
 export function NativeNavigation() {
@@ -21,10 +20,17 @@ export function NativeNavigation() {
         }}
       />
       <Stack.Screen
-        name="user-detail"
-        component={UserDetailScreen}
+        name="contact"
+        component={ContactScreen}
         options={{
-          title: 'User',
+          title: 'Contact',
+        }}
+      />
+      <Stack.Screen
+        name="instructions"
+        component={InstructionsScreen}
+        options={{
+          title: 'Instructions',
         }}
       />
     </Stack.Navigator>

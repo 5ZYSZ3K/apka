@@ -1,4 +1,4 @@
-export type LinkButtonProps = {
+export type LinkProps = {
   href: string;
   label: string;
 };

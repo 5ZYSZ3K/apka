@@ -1,11 +1,10 @@
 import {Text} from 'react-native';
 
-import Button from 'app/components/Button';
 import {MotiLink} from 'solito/moti';
 
-import {LinkButtonProps} from './types';
+import {LinkProps} from './types';
 
-const LinkButton: React.FC<LinkButtonProps> = ({href, label}) => {
+const Link: React.FC<LinkProps> = ({href, label}) => {
   return (
     <MotiLink
       href={href}
@@ -20,11 +19,9 @@ const LinkButton: React.FC<LinkButtonProps> = ({href, label}) => {
         type: 'timing',
         duration: 150,
       }}>
-      <Button>
-        <Text>{label}</Text>
-      </Button>
+      <Text>{label}</Text>
     </MotiLink>
   );
 };
 
-export default LinkButton;
+export default Link;

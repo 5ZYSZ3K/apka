@@ -2,8 +2,10 @@ import React from 'react';
 
 import {TouchableRipple} from 'react-native-paper';
 
-const Button: React.FC = ({children}) => {
-  return <TouchableRipple onPress={console.log}>{children}</TouchableRipple>;
+import {ButtonProps} from './types';
+
+const Button: React.FC<ButtonProps> = ({children, onPress}) => {
+  return <TouchableRipple onPress={onPress}>{children}</TouchableRipple>;
 };
 
 export default Button;

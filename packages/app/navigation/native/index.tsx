@@ -1,9 +1,10 @@
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ContactScreen from 'app/features/contact';
 import HomeScreen from 'app/features/home';
 import InstructionsScreen from 'app/features/instructions';
 
-const Stack = createNativeStackNavigator<{
+const Drawer = createDrawerNavigator<{
   home: undefined;
   contact: undefined;
   instructions: undefined;
@@ -11,28 +12,28 @@ const Stack = createNativeStackNavigator<{
 
 export function NativeNavigation() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
+    <Drawer.Navigator>
+      <Drawer.Screen
         name="home"
         component={HomeScreen}
         options={{
           title: 'Home',
         }}
       />
-      <Stack.Screen
+      <Drawer.Screen
         name="contact"
         component={ContactScreen}
         options={{
           title: 'Contact',
         }}
       />
-      <Stack.Screen
+      <Drawer.Screen
         name="instructions"
         component={InstructionsScreen}
         options={{
           title: 'Instructions',
         }}
       />
-    </Stack.Navigator>
+    </Drawer.Navigator>
   );
 }

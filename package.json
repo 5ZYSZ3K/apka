@@ -7,6 +7,9 @@
       "packages/*"
     ]
   },
+  "husky": {
+    "pre-commit": ".husky/pre-commit.sh"
+  },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-native": "^0.67.2",

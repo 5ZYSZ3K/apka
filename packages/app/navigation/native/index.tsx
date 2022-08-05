@@ -1,8 +1,10 @@
+import React from 'react';
+
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import ContactScreen from '@app/features/contact';
+import HomeScreen from '@app/features/home';
+import InstructionsScreen from '@app/features/instructions';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import ContactScreen from 'app/features/contact';
-import HomeScreen from 'app/features/home';
-import InstructionsScreen from 'app/features/instructions';
 
 const Drawer = createDrawerNavigator<{
   home: undefined;
@@ -10,7 +12,7 @@ const Drawer = createDrawerNavigator<{
   instructions: undefined;
 }>();
 
-export function NativeNavigation() {
+export const NativeNavigation: React.FC = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen
@@ -36,4 +38,4 @@ export function NativeNavigation() {
       />
     </Drawer.Navigator>
   );
-}
+};

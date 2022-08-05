@@ -1,10 +1,11 @@
-import { Provider } from 'app/provider'
-import Head from 'next/head'
-import React from 'react'
-import type { SolitoAppProps } from 'solito'
-import 'raf/polyfill'
+import React from 'react';
 
-function MyApp({ Component, pageProps }: SolitoAppProps) {
+import {Provider} from '@app/provider';
+import Head from 'next/head';
+import 'raf/polyfill';
+import type {SolitoAppProps} from 'solito';
+
+const MyApp: React.FC<SolitoAppProps> = ({Component, pageProps}) => {
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <Component {...pageProps} />
       </Provider>
     </>
-  )
-}
+  );
+};
 
-export default MyApp
+export default MyApp;

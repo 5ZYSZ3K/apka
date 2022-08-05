@@ -167,3 +167,7 @@ apps/next/.vercel
 
 # typescript
 apps/next/*.tsbuildinfo
+
+packages/app/yarn-error.log
+
+.husky/_

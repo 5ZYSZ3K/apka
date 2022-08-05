@@ -1,3 +1,4 @@
+import React from 'react';
 import {Text} from 'react-native';
 
 import {MotiLink} from 'solito/moti';
@@ -10,6 +11,7 @@ const Link: React.FC<LinkProps> = ({href, label}) => {
       href={href}
       animate={({hovered, pressed}) => {
         'worklet';
+
         return {
           scale: pressed ? 0.95 : hovered ? 1.1 : 1,
           rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',

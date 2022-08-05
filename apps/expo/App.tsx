@@ -1,12 +1,14 @@
 import React from 'react';
 
-import {NativeNavigation} from 'app/navigation/native';
-import {Provider} from 'app/provider';
+import {NativeNavigation} from '@app/navigation/native';
+import {Provider} from '@app/provider';
 
-export default function App() {
+const App: React.FC = () => {
   return (
     <Provider>
       <NativeNavigation />
     </Provider>
   );
-}
+};
+
+export default App;

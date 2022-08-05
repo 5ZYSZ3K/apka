@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from 'app/components/Button';
+import Button from '@app/components/Button';
 import {useRouter} from 'solito/router';
 
 import {LinkButtonProps} from './types';
@@ -8,7 +8,7 @@ import {LinkButtonProps} from './types';
 const LinkButton: React.FC<LinkButtonProps> = ({href, children}) => {
   const {push} = useRouter();
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     push(href);
   };
 

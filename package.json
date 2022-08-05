@@ -32,7 +32,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.5.1",
-    "@react-native-community/eslint-config": "^3.0.3"
+    "@react-native-community/eslint-config": "^3.0.3",
+    "lint-staged": "^12.3.4"
   },
   "scripts": {
     "native": "cd apps/expo && expo start",

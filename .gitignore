@@ -1,5 +1,4 @@
 node_modules
-yarn.lock
 apps/expo/node_modules
 apps/next/node_modules
 apps/next/.next

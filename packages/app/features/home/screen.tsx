@@ -14,7 +14,6 @@ const HomeScreen: React.FC = () => {
     <Container>
       <LinkButton href="/contact">
         <Text>{HOME_SCREEN_CONTACT_LINK_LABEL}</Text>
-        <Text>unnecessary change</Text>
       </LinkButton>
       <LinkButton href="/instructions">
         <Text>{HOME_SCREEN_INFORMATIONS_LINK_LABEL}</Text>

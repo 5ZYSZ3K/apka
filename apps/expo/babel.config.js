@@ -3,13 +3,14 @@ const path = require('path');
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
-    ['@babel/plugin-transform-flow-strip-types'],
+    ['babel-plugin-transform-class-properties'],
+    ['@babel/plugin-proposal-class-properties'],
     ['@babel/plugin-proposal-decorators', {legacy: true}],
-    ['@babel/plugin-proposal-class-properties', {loose: true}],
+    ['@babel/plugin-transform-flow-strip-types', {loose: false}],
     [
       'module-resolver',
       {
-        root: ['./src'],
+        root: ['./'],
         extensions: [
           '.ios.ts',
           '.android.ts',
@@ -21,8 +22,7 @@ module.exports = {
           '.json',
         ],
         alias: {
-          '@common': path.resolve(__dirname, '../common/src'),
-          '@mobile': path.resolve(__dirname, 'src'),
+          '@app': path.resolve(__dirname, '../../packages/app'),
         },
       },
     ],

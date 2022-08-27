@@ -11,7 +11,7 @@ const withTM = require('next-transpile-modules')([
   'moti',
   '@motify/core',
   '@motify/components',
-  'app',
+  '@apka/app',
 ]);
 
 module.exports = withPlugins(

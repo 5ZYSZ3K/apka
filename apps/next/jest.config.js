@@ -15,4 +15,5 @@ module.exports = {
     '^.+.js$': '<rootDir>/apps/next/jest/transform.js',
   },
   testMatch: ['<rootDir>/packages/app/**/__tests__/**/*test*.ts(x)'],
+  testEnvironment: 'jest-environment-jsdom',
 };

@@ -14,4 +14,5 @@ module.exports = {
     '^.+\\.(ts|tsx)$': ['@swc/jest', {sourceMaps: false}],
     '^.+.js$': '<rootDir>/apps/next/jest/transform.js',
   },
+  testEnvironment: 'jest-environment-jsdom',
 };

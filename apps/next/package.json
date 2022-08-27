@@ -19,8 +19,7 @@
     "jest-environment-jsdom": "^29.0.1",
     "next": "12.1.0",
     "raf": "^3.4.1",
-    "react-native": "^0.69.3",
-    "react-native-web": "0.17.5",
+    "react-native": "0.69.5",
     "tsconfig-paths-jest": "^0.0.1"
   },
   "devDependencies": {
@@ -31,7 +30,6 @@
     "@testing-library/react-native": "^11.0.0",
     "@types/jest": "^28.1.6",
     "@types/node": "17.0.21",
-    "@types/react": "17.0.38",
     "babel-core": "^6.26.3",
     "babel-preset-expo": "^9.2.0",
     "eslint-config-next": "^12.1.0",

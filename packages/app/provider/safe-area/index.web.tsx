@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {SafeAreaProviderProps} from './types';
+
 // on Web, we don't use React Navigation, so we are going to avoid the safe area provider
 // instead, we just have a no-op here
 // for more, see: https://solito.dev/recipes/tree-shaking
@@ -9,5 +11,7 @@ import React from 'react';
 
 // for more, see the `./use-safe-area.web.ts` file
 
-// eslint-disable-next-line react/jsx-no-useless-fragment
-export const SafeArea: React.FC = ({children}) => <>{children}</>;
+export const SafeArea: React.FC<SafeAreaProviderProps> = ({children}) => (
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  <>{children}</>
+);

@@ -3,7 +3,11 @@ import React, {useMemo} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import * as Linking from 'expo-linking';
 
-export const NavigationProvider: React.FC = ({children}) => {
+import {NavigationProviderProps} from './types';
+
+export const NavigationProvider: React.FC<NavigationProviderProps> = ({
+  children,
+}) => {
   return (
     <NavigationContainer
       linking={useMemo(

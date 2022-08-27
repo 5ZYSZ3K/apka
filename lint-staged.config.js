@@ -1,7 +1,7 @@
 module.exports = {
-  '**/*.ts(?)': [
+  '**/*.(ts|tsx)': [
     () => 'yarn typecheck',
-    'yarn test --findRelatedTests',
+    'yarn test --findRelatedTests --passWithNoTests',
     'prettier --write',
     'eslint --fix',
   ],

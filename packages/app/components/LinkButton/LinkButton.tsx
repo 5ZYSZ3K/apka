@@ -10,7 +10,6 @@ const LinkButton: React.FC<LinkButtonProps> = ({href, children}) => {
 
   const handleClick = (): void => {
     push(href);
-    href.d = 'fes';
   };
 
   return <Button onPress={handleClick}>{children}</Button>;
